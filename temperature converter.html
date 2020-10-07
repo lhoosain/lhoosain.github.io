@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My website(change)</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <header>
+            <h1 class="main-h1">Weather<span style="color: rgb(158, 31, 231);">Pal</span></h1>
+             <nav>
+                 <a href="index.html">Back to Global Temperature Checker</a>
+             </nav>
+             <div class="buttons">
+                 <a href="login form.html" style="color: #fff;"><button type="button" class="login-btn">Login</button></a>
+                 <button type="button" class="contact-btn" onclick="openForm()">Contact</button>
+             </div>
+         </header>
+
+         <!-- Temperature Converter -->
+         <div class = "temperature-main">    
+            <form class="temperature-form">
+                <div class="header-temperature">
+                    <h1 style="font-size: 31px; margin-bottom: 30px;">Temperature Converter</h1><br>
+                </div>
+                 
+
+              <div class = "info" style="margin-top: -20px;">
+                  <label for = "C" >Celcius to Fahrenheit </label>
+                  <input type="text" style="margin-bottom: -25px;" id="C" placeholder="Enter Celcius" >
+                  <p style="font-size: 15px; margin-top:30px; color: rgb(158, 31, 231); "><span id="result1"></span></p>
+
+
+                  <label for = "F">Fahrenheit to Celcius </label>
+                  <input type="text" style="margin-bottom: -25px;" id="F" placeholder="Enter Fahrenheit"> 
+                  <p style="font-size: 15px;  margin-top:30px; color: rgb(158, 31, 231);"><span id="result2"></span></p>
+                  
+                  
+                  <button type="button" onclick="getConversion()">Convert me!</button>
+                  <button type="reset" id="clear-btn">Clear</button> <!-- type="reset" will clear the input values -->
+
+               </div>
+            </form>
+            </div>
+
+         
+        <!--Popop Contact Form-->
+        <div class="contact-popup" id="myForm"> 
+
+            <form class="contact-form"> 
+                <div class="contact-header">
+                    <h1 style="margin-top: -13px;">
+                        Contact me!
+                    </h1>
+                </div>
+
+                <div class="contact-info">
+                    <input type="text" style="margin-top: 20px;" name="name" id="name" placeholder="Name" class="placeholder-color">
+                    <input type="email" style="margin-top: 13px;" name="email" id="email" placeholder="Email" class="placeholder-color">
+
+                    <textarea name="message" class="message" placeholder="Your message" class="placeholder-color"></textarea>
+
+                  <div class="contact-btns" style="margin-top: 15px">
+                    <button type="submit" class="btn send" id="submit">Send message</button>
+
+                    <button type="button" class="btn close" onclick="closeForm()">Close</button>
+                  </div>
+                </div>
+            </form>
+        </div>
+       
+
+
+        
+    <script src="main.js"></script>
+    </body>
+</html>

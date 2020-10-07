@@ -1,0 +1,501 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans';
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+    color: rgb(228, 228, 245);
+    background : rgb(19, 19, 22);
+    background: url(img/form_background.jpg);
+}
+
+.main {
+    background: url(img/form_background.jpg);
+    font-family: Arial;
+}
+
+a
+{
+   text-decoration:none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 8%;
+}
+
+header .main-h1 {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+nav {
+    text-transform: capitalize;
+    
+}
+
+nav a {
+    color: rgb(197, 197, 197);
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: inherit;
+    padding: 0 30px;
+    margin-left: 55px;
+}
+
+a:hover{
+    color: white;
+}
+
+.login-btn, .contact-btn {
+    font-family: Open Sans;
+    font-weight: bold;
+    padding: 9px 25px;
+    margin-left: 30px;
+    border-radius: 4px;
+    color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    background: rgb(112, 8, 160);
+}
+
+.login-btn:hover, .contact-btn:hover {
+    background-color: rgb(161, 14, 247);
+    transition: 0.2s ease-in-out;
+}
+
+.login-btn {
+    margin-right: 25px;
+}
+
+
+
+/*FORMS */
+
+/*Login form */
+.login_form{
+    width: 310px;
+    height: 360px;
+    padding: 40px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background : rgb(26, 26, 26);
+    text-align: center;
+    box-shadow: 2px 2px 300px black;
+}
+
+.login_form h1 {
+    font-family: 'Open Sans';
+    font-size: 34px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.login_form input[type = "text"], .login_form input[type = "password"] {
+    border: 0;
+    color: white;
+    background-color: rgb(123, 0, 180);
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+    padding: 14px 10px;
+    width: 265px;
+    outline: none;
+    border-radius: 6px;
+    transition: 0.20s;
+
+}
+
+.login_form input[type = "text"]:focus , .login_form input[type = "password"]:focus {
+    width: 285px;
+    background-color: rgb(158, 31, 231);
+    transition: 0.35s;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.6; 
+  }
+
+ 
+.login_form button {
+    border-radius: 6px;
+    padding: 10px 10px;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    display: block;
+    margin: 20px auto;
+    width: 185px;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.20px;
+}
+
+.login_form button:hover {
+    background-color: rgb(167, 19, 252);
+    transition: 0.4s ease-in-out;
+}
+
+
+
+
+
+/*Register Form*/
+.register_form{
+    width: 340px;
+    height: 437px;
+    padding: 40px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background : rgb(26, 26, 26);
+    text-align: center;
+    box-shadow: 2px 2px 300px black;
+}
+
+.register_form h1 {
+    font-family: 'Open Sans';
+    font-size: 34px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.register_form input[type = "text"], .register_form input[type = "password"] {
+    border: 0;
+    color: white;
+    background-color: rgb(123, 0, 180);
+    display: block;
+    margin: 23px auto;
+    text-align: center;
+    padding: 14px 10px;
+    width: 285px;
+    outline: none;
+    border-radius: 6px;
+    transition: 0.20s;
+
+}
+
+.register_form input[type = "text"]:focus , .register_form input[type = "password"]:focus {
+    width: 305px;
+    background-color: rgb(158, 31, 231);
+    transition: 0.35s;
+}
+
+
+
+.register_form  button {
+    border-radius: 6px;
+    padding: 10px 10px;
+    color: white;
+    background-color: rgb(26, 26, 26);
+    display: block;
+    margin: 20px auto;
+    width: 185px;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.20px;
+}
+
+.register_form button:hover {
+    background-color: rgb(167, 19, 252);
+    transition: 0.4s ease-in-out;
+}
+
+.eye {
+    position: absolute;
+    right: 76px;
+    transform: translate(0, -50%);
+    top: 55%;
+    cursor: pointer;
+}
+
+.eye1{
+    position: absolute;
+    right: 76px;
+    transform: translate(0, -50%);
+    top: 68%;
+    cursor: pointer;
+}
+
+
+.eye2{
+    position: absolute;
+    right: 72px;
+    transform: translate(0, -50%);
+    top: 53%;
+    cursor: pointer;
+}
+
+.fa {
+    color: rgb(211, 211, 211);
+  
+}
+
+
+/* FORMS DONE */ 
+
+
+
+/* WEATHER FORM */
+
+.weather-form {
+    width: 320px;
+    height: 420px;
+    padding: 40px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background : rgb(26, 26, 26);
+    text-align: center;
+    box-shadow: 2px 2px 150px black;
+
+}
+
+.weather-form .header-weather .search-box {
+    margin-bottom: 180px;
+}
+
+.weather-form .info {
+    margin-top: 160px;
+    font-size: 22px;
+    text-shadow: 3px 2px 24px #000000;
+}
+
+.header-weather  {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 3px 8px 23px #000000;
+}
+
+.header-weather input[type="text"] {
+    width: 250px;
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    font-size: 21px;
+    
+}
+
+.header-weather input[type="text"]:focus {
+    transition: 0.5s;
+    width: 275px;
+}
+
+
+/*Get Weather button*/
+.weather-form button {
+    font-family: Open Sans;
+    font-weight: bold;
+    width: 100%;
+    padding: 7px 32px;
+    margin-top: 37px;
+    border-radius: 4px;
+    color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    background: rgb(112, 8, 160);
+}
+
+.weather-form button:hover {
+    background-color: rgb(167, 19, 252);
+    transition: 0.15s ease-in-out;
+}
+
+
+
+
+/* Temperature converter Form */
+
+.temperature-form {
+    width: 290px;
+    height: 390px;
+    padding: 40px;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background : rgb(26, 26, 26);
+    text-align: center;
+    box-shadow: 2px 2px 150px black;
+}
+
+
+.temperature-form .info input[type="text"] {
+    padding: 9px;
+    width: 255px;
+    margin: 10px 0 37px 0;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #fff;
+    background-color: rgb(12, 12, 12);
+}
+
+.temperature-form .info input[type="text"]:focus {
+    transition: 0.6s;
+    width: 280px;
+}
+
+.header-temperature{
+    margin-top: -25px;
+    text-shadow: 3px 8px 25px #000000;
+}
+
+
+.temperature-form .info button[type="button"], .temperature-form .info button[type="reset"] {
+    font-size: 14px;
+    font-family: Open Sans;
+    font-weight: bold;
+    color: inherit;
+    margin: 8px 5px;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 44%;
+    background: rgb(112, 8, 160);
+} 
+
+
+
+.temperature-form .info button[type="button"]:hover {
+    background-color: rgb(167, 19, 252);
+    transition: 0.15s ease-in-out;
+}
+
+
+
+/* Contact Form */
+#myForm {          /*Ensures the form is hidden on each refresh till the contact button is pressed*/
+    display: none;
+}
+
+
+.contact-popup{
+    width: 300px;
+    height: 390px;
+    padding: 40px;
+    border-radius: 25px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background : rgb(26, 26, 26);
+    text-align: center;
+}
+
+.contact-form .contact-header{
+    text-shadow: 3px 8px 20px #000000;
+}
+  
+
+.contact-form input[type=text], .contact-form input[type="email"] {
+    color: #fff;
+    width: 280px;
+    padding: 13px;
+    margin-top: 40px;
+    border: none;
+    background-color: rgb(12, 12, 12);
+    border-radius: 12px;
+    outline: none;
+  }
+
+  
+
+.contact-form .placeholder-color {
+    margin-top: 40px;
+}
+
+
+.contact-form  .btn {
+    font-family: Open Sans; 
+    font-weight: bold;
+    font-size: 13px;
+    background: rgb(112, 8, 160);
+    color: white;
+    padding: 6px;
+    border: none;
+    border-radius: 12px;;
+    cursor: pointer;
+    width: 70%;
+    margin-bottom: 8px;
+    opacity: 0.8;
+    outline: none;
+  }
+
+.contact-form  .btn:hover {
+    background-color: rgb(167, 19, 252);
+    transition: 0.15s ease-in-out;
+}
+
+.contact-form .message {
+    background-color: rgb(12, 12, 12);
+    margin-top: 30px;
+    border-radius: 12px;
+    color: #fff;
+    outline: none;
+    border: 2px red;
+    max-width: 300px;
+    max-height: 120px;
+    min-width: 300px;
+    min-height: 120px;
+}
+
+.message::placeholder{
+    font-size: 14px;
+    font-family: Arial;
+    position: absolute;
+    padding: 8px;
+
+}
+
+  
+
+.contact-form  .close {
+    background-color: rgb(177, 0, 0);
+  }
+
+.contact-form  .close:hover {
+    background-color: rgb(255, 0, 0);
+  }
+
+.contact-form .contact-btns {
+    margin-top: 40px;
+}
+  
+

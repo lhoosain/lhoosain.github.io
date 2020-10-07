@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My website(change)</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://kit.fontawesome.com/a1ec48bbce.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        
+        <!-- NAVBAR -->
+
+        <header>
+           <h1 class="main-h1">Weather<span style="color: rgb(158, 31, 231);">Pal</span></h1>
+            <nav>
+                <a href="temperature converter.html">Try out my Temperature Converter!</a>
+            </nav>
+            <div class="buttons">
+                <a href="login form.html">
+                    <a href="login form.html" style="color: #fff;"><button type="button" class="login-btn">Login</button></a>
+                </a>
+
+                <button type="button" class="contact-btn" onclick="openForm()">Contact</button>
+            </div>
+        </header>
+        
+
+
+        <!-- Weather form --> 
+        <div class="weather-main">    
+        <form class="weather-form">
+
+            <div class="header-weather">
+                <h1 style="font-size: 26px; margin-bottom: 30px;">Global Temperature Checker</h1>
+                <input type="text" autocomplete="off" class="search-box" placeholder="Enter a city..." />
+            </div>
+
+          <div class ="info">
+              
+                <div class="city" style="font-size: 32px; font-weight:800;">Cape Town, ZA<br></div>
+                <div class="date" style="font-size: 15px; font-weight: 650;">Thursday 30 October 2020<br></div>
+                <div class="temp" style="font-size: 64px; font-weight: 800;">15°c</div>
+                <div class="weather" style="font-size: 22px; font-weight: 650; margin-bottom: 10px;">Sunny</div> 
+
+          </div>
+                
+            <button type="button" class="getWeather-btn">Get Weather</button>
+        </form>
+        </div>
+
+
+        <!--Popop Contact Form-->
+        <div class="contact-popup" id="myForm">
+
+            <form class="contact-form">
+                <div class="contact-header">
+                    <h1 style="margin-top: -13px;">
+                        Contact me!
+                    </h1>
+                </div>
+
+                <div class="contact-info">
+                    <input type="text" style="margin-top: 20px;" name="name" id="name" placeholder="Name" class="placeholder-color">
+                    <input type="email" style="margin-top: 13px;" name="email" id="email" placeholder="Email" class="placeholder-color">
+
+                    <textarea name="message" class="message" placeholder="Your message" class="placeholder-color"></textarea>
+
+                  <div class="contact-btns" style="margin-top: 15px">
+                    <button type="submit" class="btn send" id="submit">Send message</button>
+
+                    <button type="button" class="btn close" onclick="closeForm()">Close</button>
+                  </div>
+                </div>
+            </form>
+        </div>
+
+
+
+        <script src="main.js"></script>
+    </body>
+</html>
